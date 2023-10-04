@@ -1,0 +1,86 @@
+/* #1 TYPOGRAPHY SYSTEM */
+/*
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+FONT WEIGHT:400
+500
+600
+700
+
+LINE HEIGHT
+default-1
+1.05
+1.6
+1.2
+
+LETTER-SPACING
+0.75px
+-0.5px
+
+
+COLOR SYSTEM 
+primary:#e67e22
+tints:#fdf2e9
+#fae5d3
+#eb984e
+#45260a
+shades:
+accents:
+greys:#444 #333 #6f6f6f #888 #767676
+
+SHADOWS
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075)
+
+BORDER-RADIOUS
+
+WHITESPACE
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 67.5%;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+}
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.heading-primary {
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 4.8rem;
+}
+.heading-sec {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}

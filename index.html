@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/querry.css" />
+    <link rel="icon" href="icon.png" />
+    <title>Trivago - Let's Go Trivago</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="main-logo">
+        <a href="#"
+          ><img class="logo-img" src="img/main-logo.png" alt="Trivago-Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul class="main-nav-list">
+          <li class="flex-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="nav-icon heart"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+              />
+            </svg>
+            <span>Favourites</span>
+          </li>
+          <li>
+            <span>INR</span>
+            <svg
+              class="nav-icon dropdown"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <li>
+            <span>EN</span>
+            <svg
+              class="nav-icon dropdown"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg
+              class="nav-icon login"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+              />
+            </svg>
+            <span>Login</span>
+          </li>
+          <li class="flex-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="nav-icon menu"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+            <span>Menu</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <section class="bookroom">
+      <h2 class="heading-sec">We compare Hotel Price from Multiple sites</h2>
+      <div class="form">
+        <form class="booking-form grid grid--5-cols" action="#">
+          <div class="form-items search-item">
+            <div>
+              <svg
+                class="search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </div>
+            <div>
+              <input
+                id="destination"
+                placeholder="Destination"
+                type="text"
+                required
+              />
+              <label for="destination">Where To?</label>
+            </div>
+          </div>
+          <div class="form-items">
+            <div>
+              <input
+                id="check-in"
+                placeholder="DD/MM/YYYY"
+                type="date"
+                required
+              />
+              <label for="check-in">Check-In</label>
+            </div>
+          </div>
+          <div class="form-items">
+            <div>
+              <input
+                id="check-in"
+                placeholder="DD/MM/YYYY"
+                type="date"
+                required
+              />
+              <label for="destination">Check-Out</label>
+            </div>
+          </div>
+          <div class="form-items">
+            <div>
+              <select id="room-num" required>
+                <option>2 Guest / 1 Room</option>
+                <option>3 Guest / 1 Room</option>
+                <option>4 Guest / 1 Room</option>
+                <option>5 Guest / 1 Room</option>
+              </select>
+              <label for="room-num">Guests / Rooms</label>
+            </div>
+          </div>
+          <button class="btn btn-trivago search">Search</button>
+        </form>
+      </div>
+      <div class="featured-in">
+        <p class="featured-text">Our Trusted Partners</p>
+        <div class="partner">
+          <img src="img/Agoda_logo.png" alt="agoda-logo" class="partner-logo" />
+          <img
+            src="img/Booking-com-logo-logotype.png"
+            alt="booking.com-logo"
+            class="partner-logo"
+          />
+          <img
+            src="img/Hotels_logo_logotype.png"
+            alt="hotel.com-logo"
+            class="partner-logo"
+          />
+          <img
+            src="img/MakeMyTrip_Logo.png"
+            alt="makemytrip-logo"
+            class="partner-logo"
+          />
+          <img
+            src="img/One_Two_Trip_logo_logotype.png"
+            alt="trip.com-logo"
+            class="partner-logo"
+          />
+          <img
+            src="img/OYO_Rooms_Logo_full.png"
+            alt="OYO-logo"
+            class="partner-logo"
+          />
+          <span>+100 More</span>
+        </div>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="hero-main container grid grid--2-cols">
+        <div class="hero-text">
+          <h1 class="heading-primary">
+            Want a Cosy Room also at the best price
+          </h1>
+          <p class="discription">
+            Trivago's hotel search allows you to compare hotel prices in just a
+            few clicks from hundreds of booking sites for more than 5.0 million
+            hotels and other types of accommodation in over 190 countries!
+          </p>
+          <a class="btn btn-trivago" href="#">Let's go TrivaGo</a>
+          <a class="btn btn-explore" href="#">Explore</a>
+        </div>
+        <div>
+          <img
+            class="hero-img"
+            src="img/hero.webp"
+            alt="People stay at the Hotel room"
+          />
+
+          <img class="hero-2" src="img/hero-2.webp" alt="Hotel room" />
+        </div>
+      </div>
+    </section>
+    <section class="howtobook container">
+      <p class="sec">4 simple steps to book your room</p>
+      <h2 class="heading-sec help">Let Trivago help you!</h2>
+      <div class="steps grid grid--2-cols">
+        <div class="step">
+          <p class="step-num">1</p>
+          <h3 class="heading-ter">Login</h3>
+          <p class="step-des">
+            Visit the Trivago website at <a href="#">www.trivago.in</a> and Sign
+            in to your trivago login id or create an account using Sign Up
+            Button
+          </p>
+        </div>
+        <div class="step">
+          <p class="step-num">2</p>
+          <h3 class="heading-ter">Initiate the Search</h3>
+          <p class="step-des">
+            Give the location and timings of your stay along with the room-type
+            you want to choose
+          </p>
+        </div>
+        <div class="step">
+          <p class="step-num">3</p>
+          <h3 class="heading-ter">Select the Best deal</h3>
+          <p class="step-des">
+            By clicking on the “view deal” button, you will be forwarded onto a
+            booking site where you can get the best deal
+          </p>
+        </div>
+        <div class="step">
+          <p class="step-num">4</p>
+          <h3 class="heading-ter">Finish!</h3>
+          <p class="step-des">
+            Complete the reservation for the hotel deal found on trivago.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="cities-available container">
+      <h2 class="heading-sec">Most Popular Cities</h2>
+      <div class="sitecity grid grid--4-cols">
+        <div class="city city-1">
+          <img src="img/mumbai.webp" class="city-img" alt="Mumbai" />
+          <ul class="city-list">
+            <li class="city-description"><strong>Mumbai</strong></li>
+            <li class="city-description"><strong>5937</strong> Hotels</li>
+            <li class="city-description">Avg. <strong>$4000</strong></li>
+          </ul>
+        </div>
+        <div class="city city-2">
+          <img src="img/jaipur.jpg" class="city-img" alt="Jaipur" />
+          <ul class="city-list">
+            <li class="city-description"><strong>Jaipur</strong></li>
+            <li class="city-description"><strong>5329</strong> Hotels</li>
+            <li class="city-description">Avg. <strong>$4000</strong></li>
+          </ul>
+        </div>
+        <div class="city city-3">
+          <img src="img/udaypur.jpg" class="city-img" alt="Udaypur" />
+          <ul class="city-list">
+            <li class="city-description"><strong>Udaypur</strong></li>
+            <li class="city-description"><strong>4384</strong> Hotels</li>
+            <li class="city-description">Avg. <strong>$4000</strong></li>
+          </ul>
+        </div>
+        <div class="city city-4">
+          <img src="img/delhi.jpg" class="city-img" alt="Delhi" />
+          <ul class="city-list">
+            <li class="city-description"><strong>Delhi</strong></li>
+            <li class="city-description"><strong>4927</strong> Hotels</li>
+            <li class="city-description">Avg. <strong>$4000</strong></li>
+          </ul>
+        </div>
+        <div class="city city-5">
+          <img src="img/nainital.jpg" class="city-img" alt="Nainital" />
+          <ul class="city-list">
+            <li class="city-description"><strong>Nainital</strong></li>
+            <li class="city-description"><strong>3858</strong> Hotels</li>
+            <li class="city-description">Avg. <strong>$4000</strong></li>
+          </ul>
+        </div>
+        <div class="city city-6">
+          <img src="img/lucknow.jpg" class="city-img" alt="Lucknow" />
+          <ul class="city-list">
+            <li class="city-description"><strong>Lucknow</strong></li>
+            <li class="city-description"><strong>3879</strong> Hotels</li>
+            <li class="city-description">Avg. <strong>$4000</strong></li>
+          </ul>
+        </div>
+        <div class="city city-7">
+          <img src="img/bengaluru.jpg" class="city-img" alt="Bengaluru" />
+          <ul class="city-list">
+            <li class="city-description"><strong>Bengaluru</strong></li>
+            <li class="city-description"><strong>4293</strong> Hotels</li>
+            <li class="city-description">Avg. <strong>$4000</strong></li>
+          </ul>
+        </div>
+        <div class="city city-8">
+          <img src="img/shimla.jpg" class="city-img" alt="Shimla" />
+          <ul class="city-list">
+            <li class="city-description"><strong>Shimla</strong></li>
+            <li class="city-description"><strong>3938</strong> Hotels</li>
+            <li class="city-description">Avg. <strong>$4000</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="cta container">
+      <h2 class="heading-sec">Become a part of our Family</h2>
+      <div class="grid grid--2-cols">
+        <div class="singup">
+          <h3 class="heading-ter cta-ter">Sign Up for FREE</h3>
+          <form class="news-form">
+            <label for="name">User Name</label>
+            <input id="name" type="text" placeholder="Surya Prakash" readonly />
+            <label for="Number">Phone Number</label>
+            <input
+              id="Number"
+              type="tel"
+              placeholder="+91 xxxxxxxxxx"
+              required
+            />
+            <label for="mail">E-Mail Id</label>
+            <input
+              id="mail"
+              type="email"
+              placeholder="example@xyz.com"
+              required
+            />
+            <label for="password">Password</label>
+            <input
+              id="password"
+              type="number"
+              placeholder="********"
+              required
+            />
+            <button class="btn btn-trivago">Sign Up</button>
+          </form>
+        </div>
+        <div class="newsletter">
+          <h3 class="heading-ter cta-ter">Subscribe to our Newsletter</h3>
+          <form class="news-form">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Surya Prakash" required />
+            <label for="Number">Phone Number</label>
+            <input
+              id="Number"
+              type="tel"
+              placeholder="+91 xxxxxxxxxx"
+              required
+            />
+            <label for="mail">E-Mail Id</label>
+            <input
+              id="mail"
+              type="email"
+              placeholder="example@xyz.com"
+              required
+            />
+            <label for="subs-type">Subcription Model</label>
+            <select id="subs-type" required>
+              <option>1 Month</option>
+              <option>3 Month</option>
+              <option>6 Month</option>
+              <option>1 Year</option>
+              <option>2 year</option>
+            </select>
+            <button class="btn btn-trivago">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="container city-extra">
+      <div class="extra grid grid--2-cols">
+        <h3 class="heading-ter">More Popular Searches</h3>
+        <h3 class="heading-ter">Trivago International Sites</h3>
+        <div class="find hotel grid grid--2-cols">
+          <div>
+            <ul class="hotel-list">
+              <li>Hotels in Port Blair</li>
+
+              <li>Hotels in Thanjavur</li>
+              <li>Hotels in Kasauli</li>
+              <li>Hotels in New York</li>
+              <li>Hotels in Solapur</li>
+              <li>Hotels in Siliguri</li>
+              <li>Hotels in Zirakpur</li>
+              <li>Hotels in Gwalior</li>
+              <li>Hotels in Kodagu</li>
+
+              <li>Hotels in Kanpur</li>
+
+              <li>Hotels in Thekkady</li>
+
+              <li>Hotels in Tiruvannamalai</li>
+
+              <li>Hotels in Guruvayoor</li>
+
+              <li>Hotels in Manipal</li>
+
+              <li>Hotels in Makkah</li>
+
+              <li>Hotels in Greater Noida</li>
+
+              <li>Hotels in Jammu</li>
+
+              <li>Hotels in Rajkot</li>
+
+              <li>Hotels in Dalhousie</li>
+
+              <li>Hotels in Faridabad</li>
+
+              <li>Hotels in Chikhaldara</li>
+
+              <li>Hotels in Ubud</li>
+
+              <li>Hotels in Hanoi</li>
+
+              <li>Hotels in Thrissur</li>
+
+              <li>Hotels in Gandhinagar</li>
+
+              <li>Hotels in Leh</li>
+
+              <li>Hotels in Ghaziabad</li>
+
+              <li>Hotels in Kuala Lumpur</li>
+
+              <li>Hotels in Dharamsala</li>
+
+              <li>Hotels in Kerala</li>
+
+              <li>Hotels in Mauritius</li>
+
+              <li>Hotels in Karnataka</li>
+
+              <li>Hotels in Tamil Nadu</li>
+
+              <li>Hotels in Andaman and Nicobar Islands</li>
+
+              <li>Hotels in Rajasthan</li>
+
+              <li>Hotels in Telangana</li>
+
+              <li>Hotels in Sri Lanka</li>
+
+              <li>Hotels in Switzerland</li>
+
+              <li>Hotels in Delhi</li>
+
+              <li>Hotels in United Arab Emirates</li>
+
+              <li>Hotels in Tuscany</li>
+
+              <li>Hotels in Dubai</li>
+
+              <li>Hotels in Al Madinah Region</li>
+
+              <li>Hotels in Andhra Pradesh</li>
+
+              <li>Hotels in Jammu and Kashmir</li>
+
+              <li>Hotels in Singapore</li>
+
+              <li>Hotels in Seychelles</li>
+
+              <li>Hotels in West Bengal</li>
+
+              <li>Hotels in Nepal</li>
+
+              <li>Hotels in Thailand</li>
+
+              <li>Hotels in Haryana</li>
+
+              <li>Hotels in Zentral</li>
+
+              <li>Hotels in Boracay</li>
+
+              <li>Hotels in Sikkim</li>
+
+              <li>Hotels in Odisha</li>
+
+              <li>Hotels in Uttarakhand</li>
+
+              <li>Hotels in Lazio</li>
+
+              <li>Hotels in Penang</li>
+
+              <li>Hotels in Uttar Pradesh</li>
+
+              <li>Hotels in Madhya Pradesh</li>
+
+              <li>Hotels in Gujarat</li>
+
+              <li>Hotels in Ibiza</li>
+
+              <li>Hotels in Hong Kong</li>
+
+              <li>Hotels in Santorini Island</li>
+
+              <li>Hotels in Central Federal District</li>
+              <li>Hotels in Abu Dhabi</li>
+              <li>Hotels in Malaysia</li>
+              <li>Hotels in Lakshadweep</li>
+              <li>Hotels in Istanbul Province</li>
+              <li>Hotels in Punjab</li>
+              <li>Hotels in Bahrain</li>
+              <li>Hotels in Meghalaya</li>
+              <li>Hotels in Zürich</li>
+              <li>Hotels in Kuala Lumpur</li>
+              <li>Hotels in Paros Island</li>
+              <li>Hotels in Himachal Pradesh</li>
+              <li>Hotels in Mexico</li>
+              <li>Hotels in Portugal</li>
+              <li>Hotels in Vienna</li>
+              <li>Hotels in Hanoi</li>
+              <li>Hotels in Bihar</li>
+              <li>Hotels in Japan</li>
+              <li>Hotels in Corfu</li>
+              <li>Hotels in Kutch</li>
+              <li>Hotels in Kauai</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="hotel-list">
+              <li>Hotels in Chhattisgarh</li>
+              <li>Hotels in United Kingdom</li>
+              <li>Hotels in Daman and Diu</li>
+              <li>Hotels in Laos</li>
+              <li>Hotels in Maryland</li>
+              <li>Hotels in Medhu-Uthuru</li>
+              <li>Hotels in Isle of Man</li>
+              <li>Hotels in Scotland</li>
+              <li>Hotels in Shkodra</li>
+              <li>Hotels in Assam</li>
+              <li>Hotels in Poland</li>
+              <li>Hotels in Iceland</li>
+              <li>Hotels in Mahe</li>
+              <li>Hotels in California</li>
+              <li>Hotels in Southern Region</li>
+              <li>Hotels in Algarve</li>
+              <li>Hotels in British Virgin Islands</li>
+              <li>Hotels in Île-de-France</li>
+              <li>Hotels in Morocco</li>
+              <li>Hotels in Nord</li>
+              <li>Hotels in Zamboanga Peninsula</li>
+              <li>Hotels in Tanger-Tétouan</li>
+              <li>Hotels in Indonesia</li>
+              <li>Hotels in Bern</li>
+              <li>Hotels in Hauts-de-Seine</li>
+              <li>Hotels in Campania</li>
+              <li>Hotels in Antalya</li>
+              <li>Hotels in England</li>
+              <li>Hotels in Canada</li>
+              <li>Hotels in Massachusetts</li>
+              <li>Hotels in Italy</li>
+              <li>Hotels in Albania</li>
+              <li>Hotels in Central Region</li>
+              <li>Hotels in Nagano Prefecture</li>
+              <li>Hotels in Virginia</li>
+              <li>Hotels in Bangui commune</li>
+              <li>Hotels in Brunei</li>
+              <li>Hotels in Central Hungary</li>
+              <li>Hotels in Balearic Islands</li>
+              <li>Hotels in Calabria</li>
+              <li>Hotels in Kedah</li>
+              <li>Hotels in KwaZulu-Natal</li>
+              <li>otels in Manipur</li>
+              <li>Hotels in Dominican Republic</li>
+              <li>Hotels in Paro</li>
+              <li>Hotels in Qatar</li>
+              <li>Hotels in Oslo</li>
+              <li>Hotels in Philippines</li>
+              <li>Hotels in Bogotá</li>
+              <li>Hotels in Antigua and Barbuda</li>
+              <li>Hotels in Mykonos Island</li>
+              <li>Hotels in Zanzibar</li>
+              <li>Hotels in Naxos Island</li>
+              <li>Hotels in Labuan Federal Territory</li>
+              <li>Hotels in Paris</li>
+              <li>Hotels in Pennsylvania</li>
+              <li>Hotels in Siem Reap</li>
+              <li>Hotels in Sharjah</li>
+              <li>Hotels in Greater London</li>
+              <li>Hotels in New Hampshire</li>
+              <li>Hotels in New Zealand</li>
+              <li>Hotels in Spain</li>
+              <li>Hotels in Russia</li>
+              <li>Hotels in British Columbia</li>
+              <li>Hotels in Türkiye</li>
+              <li>Hotels in Mizoram</li>
+              <li>Hotels in Saudi Arabia</li>
+              <li>Hotels in Colorado</li>
+              <li>Hotels in Greece</li>
+              <li>Hotels in Jeju-do</li>
+              <li>Hotels in Lucerne</li>
+              <li>Hotels in Larnaca</li>
+              <li>Hotels in Kelantan</li>
+              <li>Hotels in Vietnam</li>
+              <li>Hotels in New Jersey</li>
+              <li>Hotels in Southern Province</li>
+              <li>Hotels in Tripura</li>
+              <li>Hotels in Illinois</li>
+              <li>Hotels in Sumatra</li>
+              <li>Hotels in USA</li>
+              <li>Hotels in Zakynthos - Zante</li>
+              <li>Hotels in Kedah</li>
+              <li>Hotels in Hauts-de-Seine</li>
+              <li>Hotels in United Arab Emirates</li>
+              <li>Hotels in Kelantan</li>
+            </ul>
+          </div>
+        </div>
+        <div class="find international grid grid--2-cols">
+          <div>
+            <ul class="hotel-list">
+              <li>trivago UAE</li>
+              <li>trivago Argentina</li>
+              <li>trivago Österreich</li>
+              <li>trivago Australia</li>
+              <li>trivago België</li>
+              <li>trivago България</li>
+              <li>trivago Brasil</li>
+              <li>trivago Canada</li>
+              <li>trivago Schweiz</li>
+              <li>trivago Chile</li>
+              <li>trivago Colombia</li>
+              <li>trivago Česko</li>
+              <li>trivago Deutschland</li>
+              <li>trivago Danmark</li>
+              <li>trivago Ecuador</li>
+              <li>trivago España</li>
+              <li>trivago Suomi</li>
+              <li>trivago France</li>
+              <li>trivago Ελλάδα</li>
+              <li>trivago 香港</li>
+              <li>trivago Hrvatska</li>
+              <li>trivago Magyarország</li>
+              <li>trivago Indonesia</li>
+              <li>trivago Ireland</li>
+              <li>trivago ישראל</li>
+              <li>trivago India</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="hotel-list">
+              <li>trivago Italia</li>
+              <li>trivago 한국</li>
+              <li>trivago México</li>
+              <li>trivago Nederland</li>
+              <li>trivago Malaysia</li>
+              <li>trivago Norge</li>
+              <li>trivago New Zealand</li>
+              <li>trivago Perú</li>
+              <li>trivago Pilipinas</li>
+              <li>trivago Polska</li>
+              <li>trivago Portugal</li>
+              <li>trivago România</li>
+              <li>trivago Srbija</li>
+              <li>trivago Sverige</li>
+              <li>trivago Singapore</li>
+              <li>trivago لعالم العربي</li>
+              <li>trivago Slovenija</li>
+              <li>trivago Slovensko</li>
+              <li>trivago ประเทศไทย</li>
+              <li>trivago Türkiye</li>
+              <li>trivago 台灣</li>
+              <li>trivago United Kingdom</li>
+              <li>trivago USA</li>
+              <li>trivago Uruguay</li>
+              <li>trivago Việt Nam</li>
+              <li>trivago South Africa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container grid grid--4-cols">
+        <div>
+          <a href="#"
+            ><img class="logo-img" src="img/main-logo.png" alt="Trivago-Logo" />
+          </a>
+          <ul class="social-link">
+            <li>
+              <a href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">Copyright 2023 trivago | All rights reserved</p>
+        </div>
+        <div class="address-col">
+          <p class="head">Contact Us</p>
+          <address class="contacts">
+            <p class="address">
+              Trivago N.V., Kesselstraße 5-7, 40221 Düsseldorf, Germany
+            </p>
+            <p class="info">
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@trivago.com"
+                >hello@trivago.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <div class="company">
+          <p class="head">Company</p>
+          <ul class="info">
+            <li><a href="#">Jobs</a></li>
+
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Investor relations</a></li>
+            <li><a href="#">Mobile apps - searching on the go</a></li>
+            <li><a href="#">Trivago Business Studio</a></li>
+          </ul>
+        </div>
+        <div class="helper">
+          <p class="head">Help</p>
+          <ul class="info">
+            <li><a href="#">Learn how trivago works</a></li>
+
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Legal information</a></li>
+            <li><a href="#">Privacy notice</a></li>
+            <li><a href="#">Cyber Security</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>

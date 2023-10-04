@@ -1,0 +1,357 @@
+.nav-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.logo-img {
+  height: 9.6rem;
+}
+.main-nav-list {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  list-style: none;
+  font-size: 1.8rem;
+}
+.main-nav-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.8rem;
+  background-color: #f7f7f7;
+}
+.discription {
+  margin-bottom: 4.8rem;
+}
+
+.hero-2 {
+  width: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hero-3 {
+  width: 20%;
+  height: 35%;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+.hero-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.hero-img {
+  width: 100%;
+}
+.hero {
+  padding: 4.8rem 9.6rem;
+  position: relative;
+  margin-bottom: 12.8rem;
+  margin-top: 6.4rem;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  font-size: 1.6rem;
+  margin-right: 3.2rem;
+  transition: all 0.3s;
+}
+.btn-trivago:hover,
+.btn-trivago:active {
+  background-color: #0670af;
+}
+.btn-trivago {
+  background-color: rgb(0, 124, 194);
+  color: #fff;
+}
+.btn-explore {
+  color: rgb(0, 124, 194);
+  box-shadow: 0 0 0 0.8px rgb(0, 124, 194);
+  transition: all 0.3s;
+}
+.btn-explore:hover,
+.btn-explore:active {
+  box-shadow: 0 0 0 2px rgb(0, 124, 194);
+}
+.button {
+  display: flex;
+  gap: 3.2rem;
+}
+/* .bookroom {
+  display: flex;
+  justify-content: space-between;
+} */
+.booking-form label {
+  display: block;
+}
+.booking-form {
+  /* column-gap: 3.2rem; */
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem #4d4d4d5d;
+  background-color: #fff;
+}
+.form .booking-form {
+  column-gap: 0;
+}
+.booking-form input {
+  border: none;
+  padding-bottom: 0.6rem;
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  color: #7d7d7d;
+}
+.booking-form select {
+  border: none;
+  font-size: 1.8rem;
+  width: 100%;
+  padding-bottom: 0.6rem;
+  transition: all 0.2s;
+}
+.booking-form label {
+  font-size: 1.2rem;
+}
+
+.bookroom {
+  background-color: #f7f7f7;
+  padding: 3.2rem 12.8rem;
+}
+.search {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+}
+.form-items {
+  border-right: 0.8px solid;
+  padding: 1.2rem 0;
+}
+.search-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.form-items {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  justify-content: center;
+}
+.booking-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px rgb(0, 124, 194);
+  border-radius: 6px;
+}
+.booking-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px rgb(0, 124, 194);
+  border-radius: 6px;
+}
+.partner-logo {
+  height: 3.2rem;
+}
+.partner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-text {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.6rem;
+  margin-top: 4.8rem;
+}
+.partner span {
+  font-size: 1.6rem;
+  color: #777;
+}
+.howtobook {
+  background-color: #007cc2;
+  border-radius: 16px;
+  padding: 6.4rem 3.2rem;
+}
+.sec {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #cde5f3;
+}
+
+.steps {
+  column-gap: 4.8rem;
+  row-gap: 6.4rem;
+  margin-top: 4.8rem;
+}
+.step {
+  background-color: #fff;
+  border-radius: 9px;
+  padding: 2rem 1.6rem;
+  box-shadow: 0 0.8rem 1.6rem #0000002d;
+}
+.help {
+  color: #e6f2f9;
+}
+
+.step-num {
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #7d7d7d;
+}
+.heading-ter {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+.step-des {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.sitecity {
+  row-gap: 4.8rem;
+  column-gap: 2.4rem;
+  margin-bottom: 12.8rem;
+}
+.city-img {
+  width: 100%;
+  height: 17.5rem;
+}
+.city {
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 1.2rem 2.4rem #0000003b;
+  transition: all 0.3s;
+}
+.city:hover {
+  transform: translatey(-8%);
+  box-shadow: 0 1.2rem 3.6rem #0000003b;
+}
+.cities-available .heading-sec {
+  margin-top: 6.4rem;
+}
+.city-list {
+  margin-left: 2rem;
+  list-style: none;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.city-description strong {
+  color: rgb(0, 124, 194);
+}
+.news-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.news-form input,
+.news-form select {
+  font-size: 1.6rem;
+  border: none;
+  padding: 0.8rem;
+  border-bottom: solid 1px rgb(0, 124, 194);
+  color: #d7d7d7;
+}
+.news-form ::placeholder {
+  color: #d7d7d7;
+}
+.news-form label {
+  font-size: 1.2rem;
+  color: #007cc2;
+}
+.cta .grid {
+  column-gap: 12.8rem;
+  margin-top: 6.4rem;
+}
+.cta-ter {
+  color: #004c78;
+}
+.cta {
+  background-color: #e6f2f9;
+  padding: 4.8rem;
+  border-radius: 9px;
+}
+.find {
+  height: 50vh;
+  overflow: scroll;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 600;
+  background-color: #f7f7f7;
+  border-radius: 11px;
+  padding: 2.4rem;
+  margin-bottom: 12.8rem;
+}
+.hotel-list {
+  list-style: none;
+}
+.extra {
+  margin-top: 6.4rem;
+}
+.footer {
+  background-color: #e6f2f9;
+  padding-bottom: 4.8rem;
+}
+.social-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #007cc2;
+}
+.social-link {
+  display: flex;
+  list-style: none;
+  gap: 2.4rem;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.copyright {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 2.4rem;
+}
+.helper,
+.company,
+.address-col {
+  margin-top: 4.8rem;
+}
+.info {
+  list-style: none;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+.info a,
+.address {
+  text-decoration: none;
+  color: #007cc2;
+}
+.contacts {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-style: normal;
+}
+.address {
+  margin-bottom: 1.8rem;
+}
+.head {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #004c78;
+  margin-bottom: 1.2rem;
+}
+/* Optimisation */
+.search-icon {
+  display: inline-block;
+  margin-left: 1.2rem;
+}
